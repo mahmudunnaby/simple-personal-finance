@@ -1,0 +1,20 @@
+.font{
+    font-family: 'Poppins', sans-serif;
+}
+.bg-color{
+    background-image: linear-gradient(#f1d9e6,#e3c8d7);
+}
+.bg-color-form{
+    background-image: linear-gradient(#ffaeeb,#ffb5de);
+    border-radius: 20px;
+}
+.displaycontent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.resize{
+    width: 100%;
+    
+}
+
