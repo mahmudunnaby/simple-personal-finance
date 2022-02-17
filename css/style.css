@@ -1,20 +1,35 @@
+
+/* google font added css */
+
 .font{
     font-family: 'Poppins', sans-serif;
 }
+
+/* body portion */
+
 .bg-color{
     /* background-image: linear-gradient(#f1d9e6,#e3c8d7); */
     color: azure;
     
 }
+
+/* form portion */
+
 .bg-color-form{
     background-image: linear-gradient(#ff85b8,#ff79f4);
     border-radius: 30px;
 }
+
+/* saving portion */
 .displaycontent{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
+
+/* saving input field resize */
+
 .resize{
     width: 100px;
 }
