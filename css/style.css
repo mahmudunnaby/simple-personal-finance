@@ -28,6 +28,11 @@
     justify-content: center;
 }
 
+/* Expence & income input field resize */
+.resizeinput{
+    width: 200px; ;
+}
+
 /* saving input field resize */
 
 .resize{
