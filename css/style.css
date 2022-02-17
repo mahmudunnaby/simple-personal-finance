@@ -2,11 +2,13 @@
     font-family: 'Poppins', sans-serif;
 }
 .bg-color{
-    background-image: linear-gradient(#f1d9e6,#e3c8d7);
+    /* background-image: linear-gradient(#f1d9e6,#e3c8d7); */
+    color: azure;
+    
 }
 .bg-color-form{
-    background-image: linear-gradient(#ffaeeb,#ffb5de);
-    border-radius: 20px;
+    background-image: linear-gradient(#ff85b8,#ff79f4);
+    border-radius: 30px;
 }
 .displaycontent{
     display: flex;
@@ -14,7 +16,7 @@
     align-items: center;
 }
 .resize{
-    width: 100%;
-    
+    width: 100px;
 }
+
 
