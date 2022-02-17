@@ -55,6 +55,9 @@ document.getElementById('calculation').addEventListener('click', function () {
 
     }
 
+    else if (typeof (incomeValue) != typeof ('') || typeof (foodCost) != typeof ('') || typeof (rentCost) != typeof ('') || typeof (clothesCost) != typeof ('')) {
+        alert('Numbers only')
+    }
     else {
         alert('Please provide a valid positive number in all expences field')
     }
@@ -95,10 +98,7 @@ document.getElementById('save').addEventListener('click', function () {
 
     }
 
-    else if (savingValue < 0) {
-        alart('Please provide valid positive number in all the fields')
 
-    }
     else {
         alert('Saving more than balance is not possible.Please provide valid positive number in all the fields')
     }
