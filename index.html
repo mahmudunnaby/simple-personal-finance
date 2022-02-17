@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Finance</title>
     <!-- CSS intregration -->
     <link rel="stylesheet" href="./css/style.css">
@@ -43,7 +43,7 @@
 
                     <!-- Form Portion -->
 
-                    <div class="bg-color-form p-4 mb-5 px-5 ">
+                    <div class="bg-color-form p-4 mb-5 ">
 
                         <!-- Income Input -->
 
@@ -54,8 +54,8 @@
 
                             <div class="d-flex align-items-center  justify-content-end  ">
                                 <h5>Income:</h5>
-                                <input class="text-center fw-light mx-2 resizeinput" placeholder="Total Income"
-                                    type="number">
+                                <input id="income" class="text-center fw-light mx-2 resizeinput test"
+                                    placeholder="Total Income" type="number">
 
                             </div>
                         </div>
@@ -69,23 +69,24 @@
 
                             <div class="d-flex align-items-center justify-content-end ">
                                 <h5>Food:</h5>
-                                <input class="text-center fw-light mx-2  resizeinput" placeholder="Cost on Food"
-                                    type="number">
+                                <input id="food" class="text-center fw-light mx-2  resizeinput"
+                                    placeholder="Cost on Food" type="number">
                             </div>
                             <div class="d-flex align-items-center justify-content-end ">
                                 <h5>Rent:</h5>
-                                <input class="text-center fw-light mx-2 resizeinput" placeholder="Cost on Rent"
-                                    type="number">
+                                <input id="rent" class="text-center fw-light mx-2 resizeinput"
+                                    placeholder="Cost on Rent" type="number">
                             </div>
                             <div class="d-flex align-items-center justify-content-end">
                                 <h5>Clothes:</h5>
-                                <input class="text-center fw-light fw-light mx-2 resizeinput"
+                                <input id="clothes" class="text-center fw-light fw-light mx-2 resizeinput"
                                     placeholder="Cost on Cloths" type="number">
                             </div>
                             <div class=" my-3 p-3  text-center  ">
-                                <button class="btn btn-primary  ">Calculate</button>
-                                <h4 class="mt-2 text-center fw-bold ">Total Expenses: <span>5500</span></h4>
-                                <h4 class="text-center fw-bold">Balance: <span>4500</span></h4>
+                                <button id="calculation" class="btn btn-primary  ">Calculate</button>
+                                <h4 class="mt-2 text-center fw-bold ">Total Expenses: <span id="expence">00</span>
+                                </h4>
+                                <h4 class="text-center fw-bold">Balance: <span id="balance">00</span></h4>
                             </div>
 
                         </div>
@@ -94,15 +95,16 @@
 
                         <div class=" displaycontent">
                             <h5 class="mx-1">Save</h5>
-                            <input class="mx-1 resize fw-light text-center resizeinput" placeholder="Save"
-                                type="number">
+                            <input id="amoutSave" class="mx-1 resize fw-light text-center resizeinput"
+                                placeholder="Save" type="number">
                             <h5 class="mx-1">%</h5>
-                            <button class="btn btn-primary  px-3 mx-1">Save</button>
+                            <button id="save" class="btn btn-primary  px-3 mx-1">Save</button>
                         </div>
 
                         <div class="">
-                            <h4 class="text-center fw-bold mt-5">Total Expenses: <span>5500</span></h4>
-                            <h4 class="text-center fw-bold ">Balance: <span>4500</span></h4>
+                            <h4 class="text-center fw-bold mt-5">Saving Amount: <span id="savedValue">00</span></h4>
+                            <h4 class="text-center fw-bold ">Remaining Balance: <span id="remainingBalance">00</span>
+                            </h4>
 
                         </div>
 
@@ -121,6 +123,7 @@
     </main>
     <!-- JS intregration -->
     <script src="./app/app.js"></script>
+    <script src="./app/draft.js"></script>
 </body>
 
 </html>
