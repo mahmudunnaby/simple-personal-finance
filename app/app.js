@@ -56,7 +56,7 @@ document.getElementById('calculation').addEventListener('click', function () {
     }
 
     else if (typeof (incomeValue) != typeof ('') || typeof (foodCost) != typeof ('') || typeof (rentCost) != typeof ('') || typeof (clothesCost) != typeof ('')) {
-        alert('Numbers only')
+        alert(' Positive Numbers only at all field')
     }
     else {
         alert('Please provide a valid positive number in all expences field')
